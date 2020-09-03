@@ -72,3 +72,7 @@ function wagesEarnedOnDate(dateStamp){
     return hoursWorkedOnDate.call(this, dateStamp) * this.payPerHour
 
 }
+
+function findEmployeeByFirstName(employees, firstName)
+   return employees.find(employee => employee.firstName === firstName)
+}
