@@ -73,6 +73,6 @@ function wagesEarnedOnDate(dateStamp){
 
 }
 
-function findEmployeeByFirstName(employees, firstName)
+function findEmployeeByFirstName(employees, firstName){
    return employees.find(employee => employee.firstName === firstName)
 }
