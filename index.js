@@ -66,3 +66,9 @@ function hoursWorkedOnDate(dateStamp){
     return ((timeOutForDate.hour - timeInForDate.hour)/100)
 
 }
+
+function wagesEarnedOnDate(dateStamp)
+
+    return hoursWorkedOnDate.call(this, dateStamp) * this.payPerHour
+
+}
