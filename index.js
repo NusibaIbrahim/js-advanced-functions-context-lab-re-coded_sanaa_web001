@@ -76,3 +76,8 @@ function wagesEarnedOnDate(dateStamp){
 function findEmployeeByFirstName(employees, firstName){
    return employees.find(employee => employee.firstName === firstName)
 }
+
+function calculatePayroll(allEmployees){
+    return allEmployees.reduce((total, employee) => total + allWagesFor.call(employee), 0) 
+
+} 
